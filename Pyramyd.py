@@ -87,6 +87,8 @@ def vendor_qualification(query: VendorQuery):
         0.3 * df['normalized_rating']
     )
     top_vendors = df[df['final_score'] > 0.4].sort_values(by='final_score', ascending=False).head(10)
+    if top_vendors.empty:
+        print("No vendors passed the scoring threshold.")
     return top_vendors[['product_name', 'final_score']].to_dict(orient='records')
 
 # Run the FastAPI application
