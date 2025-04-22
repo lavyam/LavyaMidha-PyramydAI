@@ -87,7 +87,7 @@ def vendor_qualification(query: VendorQuery):
         0.3 * df['normalized_rating']
     )
     top_vendors = df[df['final_score'] > 0.4].sort_values(by='final_score', ascending=False).head(10)
-    return top_vendors[['product_name', 'final_score', 'semantic_similarity', 'token_overlap']].to_dict(orient='records')
+    return top_vendors[['product_name', 'final_score']].to_dict(orient='records')
 
 # Run the FastAPI application
 if __name__ == "__main__":
