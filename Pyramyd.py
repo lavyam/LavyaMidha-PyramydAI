@@ -43,7 +43,7 @@ def flatten_features(text):
 # Extract keywords from product features and description
 def extract_keywords(text):
     if not text: return []
-    keywords = kw_model.extract_keywords(text, stop_words='english', top_n=10)
+    keywords = kw_model.extract_keywords(text, stop_words='english', top_n=20)
     return [kw for kw, _ in keywords]
 
 # Calculate Jaccard similarity for token-level comparison between user query and predicted keywords
