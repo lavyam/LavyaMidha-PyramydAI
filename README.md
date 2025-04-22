@@ -43,6 +43,8 @@ Final Score = $0.6 \cdot SemanticSimilarity + 0.1 \cdot TokenOverlap + 0.3 \cdo
 
 ## Future Steps 
 
-Implement fuzzy matching or semantic expansion for software categories (e.g., if user types “crm,” also include “customer relationship management”).
+1. Implement fuzzy matching or semantic expansion for software categories (e.g., if user types “crm,” also include “customer relationship management”).
+2. Added more tests with a test.py file instead of short tests within the code. 
+
 
 
