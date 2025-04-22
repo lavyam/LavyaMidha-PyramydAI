@@ -1,0 +1,6 @@
+nltk
+pandas
+uvicorn
+fastapi
+keybert
+sentence-transformers
